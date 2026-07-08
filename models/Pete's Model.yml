@@ -1,6 +1,6 @@
 unique_name: Pete's Model
 object_type: model
-label: Pete's Model
+label: Pete's Model is here!
 metrics:
   - unique_name: m_factinternetsales_salesamount_sum
   - unique_name: m_factinternetsales_taxamt_avg
