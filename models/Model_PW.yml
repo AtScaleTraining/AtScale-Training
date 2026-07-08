@@ -1,0 +1,17 @@
+unique_name: Model_PW
+object_type: model
+label: Model_PW
+metrics:
+  - unique_name: m_factinternetsales_salesamount_sum
+    folder: Sales
+  - unique_name: m_factinternetsales_taxamt_avg
+    folder: Sales
+  - unique_name: m_factinternetsales_salesamount_sum (1)
+    folder: Sales
+  - unique_name: m_factinternetsales_taxamt_sum
+    folder: Sales
+  - unique_name: m_factinternetsales_customerkey_dc
+    folder: Sales
+  - unique_name: m_factinternetsales_customerkey_dce
+    folder: Sales
+relationships: []
