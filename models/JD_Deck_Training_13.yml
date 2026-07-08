@@ -1,0 +1,9 @@
+unique_name: JD_Deck_Training_13
+object_type: model
+label: JD_Deck_Training_13
+metrics:
+  - unique_name: m_factinternetsales_salesamount_sum
+  - unique_name: m_factinternetsales_taxamt_avg
+  - unique_name: m_factinternetsales_orderquantity_sum
+  - unique_name: m_factinternetsales_customerkey_dc
+relationships: []
