@@ -1,0 +1,12 @@
+unique_name: Pete's Model
+object_type: model
+label: Pete's Model
+metrics:
+  - unique_name: m_factinternetsales_salesamount_sum
+  - unique_name: m_factinternetsales_taxamt_avg
+  - unique_name: m_factinternetsales_orderquantity_sum
+  - unique_name: m_factinternetsales_customerkey_dc
+  - unique_name: m_factinternetsales_customerkey_dce
+  - unique_name: m_factinternetsales_taxamt_sum
+  - unique_name: m_factinternetsales_salesamount_avg
+relationships: []
