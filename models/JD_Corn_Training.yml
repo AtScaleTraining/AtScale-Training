@@ -1,0 +1,11 @@
+unique_name: JD_Corn_Training
+object_type: model
+label: JD_Corn_Training
+metrics:
+  - unique_name: m_factinternetsales_salesamount_sum
+  - unique_name: m_factinternetsales_taxamt_avg
+  - unique_name: m_factinternetsales_salesamount_avg
+  - unique_name: m_factinternetsales_taxamt_sum
+  - unique_name: m_factinternetsales_orderquantity_sum
+  - unique_name: m_factinternetsales_customerkey_dc
+relationships: []
