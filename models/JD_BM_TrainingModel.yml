@@ -1,6 +1,11 @@
 unique_name: JD_BM_TrainingModel
 object_type: model
 label: JD_BM_TrainingModel
+dimensions:
+  - Color
+  - Weight
+  - Size
+  - Style
 metrics:
   - unique_name: m_factinternetsales_salesamount_sum
   - unique_name: m_factinternetsales_taxamt_avg
@@ -8,4 +13,14 @@ metrics:
   - unique_name: m_factinternetsales_orderquantity_sum
   - unique_name: m_factinternetsales_salesamount_avg
   - unique_name: m_factinternetsales_taxamt_sum
-relationships: []
+  - unique_name: m_factinternetsales_Tax_Rate_sum
+  - unique_name: m_factinternetsales_Counter_sum
+relationships:
+  - unique_name: factinternetsales_orderdatekey_to_date_dimension_day_id_level
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - orderdatekey
+    to:
+      dimension: date_dimension
+      level: day_id_level
