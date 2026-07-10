@@ -1,0 +1,7 @@
+unique_name: Dipu_BM_Training_Model
+object_type: model
+label: Dipu_BM_Training_Model
+metrics:
+  - unique_name: m_factinternetsales_salesamount_sum
+  - unique_name: m_factinternetsales_taxamt_avg
+relationships: []
