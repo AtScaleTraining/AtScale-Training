@@ -1,6 +1,13 @@
 unique_name: JD_BM_TrainingModel
 object_type: model
 label: JD_BM_TrainingModel
+dimensions:
+  - Counter
+  - Tax_Rate
+  - Color
+  - Size
+  - Weight
+  - Style
 metrics:
   - unique_name: m_factinternetsales_salesamount_sum
   - unique_name: m_factinternetsales_taxamt_avg
