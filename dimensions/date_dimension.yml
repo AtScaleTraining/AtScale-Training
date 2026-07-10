@@ -1,0 +1,29 @@
+unique_name: date_dimension
+object_type: dimension
+label: Date Dimension
+hierarchies:
+  - unique_name: date_dimension Hierarchy
+    label: Y_Q_M_D
+    levels:
+      - unique_name: Year
+      - unique_name: Quarter
+level_attributes:
+  - unique_name: Year
+    label: Year
+    contains_unique_names: false
+    dataset: dimdate
+    is_unique_key: false
+    key_columns:
+      - datekey
+    name_column: datekey
+    time_unit: year
+  - unique_name: Quarter
+    label: Quarter
+    contains_unique_names: false
+    dataset: dimdate
+    is_unique_key: false
+    key_columns:
+      - datekey
+    name_column: datekey
+    time_unit: quarter
+type: time

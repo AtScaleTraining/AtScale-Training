@@ -1,0 +1,26 @@
+unique_name: dimdate
+object_type: dataset
+label: dimdate
+columns:
+  - name: datekey
+    data_type: long
+  - name: fulldatealternatekey
+    data_type: string
+  - name: daynumberofweek
+    data_type: int
+  - name: englishdaynameofweek
+    data_type: string
+  - name: daynumberofmonth
+    data_type: int
+  - name: weeknumberofyear
+    data_type: int
+  - name: englishmonthname
+    data_type: string
+  - name: monthnumberofyear
+    data_type: int
+  - name: calendarquarter
+    data_type: int
+  - name: calendaryear
+    data_type: int
+connection_id: con_atscale_public
+table: dimdate
