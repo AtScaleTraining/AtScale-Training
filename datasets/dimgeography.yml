@@ -1,0 +1,16 @@
+unique_name: dimgeography
+object_type: dataset
+label: dimgeography
+columns:
+  - name: geographykey
+    data_type: int
+  - name: city
+    data_type: string
+  - name: stateprovincename
+    data_type: string
+  - name: englishcountryregionname
+    data_type: string
+  - name: postalcode
+    data_type: string
+connection_id: con_atscale_public
+table: dimgeography

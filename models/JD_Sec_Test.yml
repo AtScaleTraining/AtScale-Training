@@ -1,0 +1,6 @@
+unique_name: JD_Sec_Test
+object_type: model
+label: JD_Sec_Test
+metrics:
+  - unique_name: m_factinternetsales_orderquantity_sum (1)
+relationships: []

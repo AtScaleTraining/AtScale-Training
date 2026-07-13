@@ -1,0 +1,53 @@
+unique_name: dimgeography_dimension
+object_type: dimension
+label: dimgeography_dimension
+hierarchies:
+  - unique_name: dimgeography_dimension Hierarchy
+    label: dimgeography_dimension Hierarchy
+    levels:
+      - unique_name: englishcountryregionname
+      - unique_name: stateprovincename
+      - unique_name: city
+      - unique_name: dimgeography_dimension Level
+level_attributes:
+  - unique_name: dimgeography_dimension Level
+    label: dimgeography_dimension Level
+    contains_unique_names: false
+    dataset: dimgeography
+    is_unique_key: false
+    key_columns:
+      - geographykey
+    name_column: geographykey
+  - unique_name: city
+    label: city
+    contains_unique_names: false
+    dataset: dimgeography
+    key_columns:
+      - city
+    name_column: city
+  - unique_name: stateprovincename
+    label: stateprovincename
+    contains_unique_names: false
+    dataset: dimgeography
+    key_columns:
+      - stateprovincename
+    name_column: stateprovincename
+  - unique_name: englishcountryregionname
+    label: englishcountryregionname
+    contains_unique_names: false
+    dataset: dimgeography
+    key_columns:
+      - englishcountryregionname
+    name_column: englishcountryregionname
+relationships:
+  - unique_name: dimgeography_englishcountryregionname_to_az_country_map_row_security
+    from:
+      dataset: dimgeography
+      hierarchy: dimgeography_dimension Hierarchy
+      join_columns:
+        - englishcountryregionname
+      level: dimgeography_dimension Level
+    to:
+      row_security: az_country_map_row_security
+    type: embedded
+type: standard

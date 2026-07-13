@@ -1,0 +1,10 @@
+unique_name: az_country_map_row_security
+object_type: row_security
+label: az_country_map_row_security
+dataset: az_country_map
+filter_key_column: country
+id_type: user
+ids_column: username
+scope: all
+secure_totals: false
+use_filter_key: false
