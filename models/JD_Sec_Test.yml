@@ -3,4 +3,14 @@ object_type: model
 label: JD_Sec_Test
 metrics:
   - unique_name: m_factinternetsales_orderquantity_sum (1)
-relationships: []
+relationships:
+  - unique_name: >-
+      factinternetsales_customerkey_to_dimcustomer_dimension_dimcustomer_dimension
+      Level
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - customerkey
+    to:
+      dimension: dimcustomer_dimension
+      level: dimcustomer_dimension Level
