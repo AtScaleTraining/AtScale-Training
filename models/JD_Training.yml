@@ -1,6 +1,6 @@
-unique_name: JD_Deck_Training
+unique_name: JD_Training
 object_type: model
-label: JD_Deck_Training
+label: JD_Training
 dimensions:
   - Color
   - Style
