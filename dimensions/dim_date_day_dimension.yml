@@ -1,0 +1,6 @@
+unique_name: dim_date_day_dimension
+object_type: dimension
+label: dim_date_day_dimension
+hierarchies: []
+level_attributes: []
+type: standard
