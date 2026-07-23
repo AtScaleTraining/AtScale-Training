@@ -1,6 +1,22 @@
 unique_name: JD_Deck_Training
 object_type: model
 label: JD_Deck_Training
+aggregates:
+  - unique_name: Product Occupation Sales
+    label: Product Occupation Sales
+    attributes:
+      - name: occupation
+        dimension: customer_dimension
+      - name: Product Category
+        dimension: Product Dimension
+      - name: year
+        dimension: dim_date_day_dimension
+        relationships_path:
+          - >-
+            factinternetsales_orderdatekey_to_dim_date_day_dimension_day_id_level
+    metrics:
+      - m_factinternetsales_orderquantity_sum
+      - m_factinternetsales_salesamount_sum
 dimensions:
   - Color
   - Style
@@ -13,12 +29,14 @@ metrics:
   - unique_name: m_factinternetsales_taxamt_sum
   - unique_name: m_factinternetsales_orderquantity_sum
   - unique_name: m_factinternetsales_customerkey_dc
+  - unique_name: m_shipping_table_orderquantity_sum
 relationships:
   - unique_name: factinternetsales_orderdatekey_to_dim_date_day_dimension_day_id_level
     from:
       dataset: factinternetsales
       join_columns:
         - orderdatekey
+    role_play: Order {0}
     to:
       dimension: dim_date_day_dimension
       level: day_id_level
@@ -30,3 +48,28 @@ relationships:
     to:
       dimension: customer_dimension
       level: customer_name
+  - unique_name: factinternetsales_productkey_to_Product Dimension_Product Name
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - productkey
+    to:
+      dimension: Product Dimension
+      level: Product Name
+  - unique_name: factinternetsales_shipdatekey_to_dim_date_day_dimension_day_id_level
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - shipdatekey
+    role_play: Ship {0}
+    to:
+      dimension: dim_date_day_dimension
+      level: day_id_level
+  - unique_name: shipping_table_productkey_to_Product Dimension_Product Name
+    from:
+      dataset: shipping_table
+      join_columns:
+        - productkey
+    to:
+      dimension: Product Dimension
+      level: Product Name

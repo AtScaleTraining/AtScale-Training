@@ -1,0 +1,6 @@
+unique_name: m_shipping_table_orderquantity_sum
+object_type: metric
+label: Order Quantity - Ship
+calculation_method: sum
+column: orderquantity
+dataset: shipping_table
