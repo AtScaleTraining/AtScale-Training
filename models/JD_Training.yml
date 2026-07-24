@@ -22,3 +22,11 @@ relationships:
     to:
       dimension: dim_date_day_dimension
       level: day_id_level
+  - unique_name: factinternetsales_customerkey_to_customer_dimension_customer_name
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - customerkey
+    to:
+      dimension: customer_dimension
+      level: customer_name
