@@ -1,0 +1,6 @@
+unique_name: New Model
+object_type: model
+label: New Model
+metrics:
+  - unique_name: m_factinternetsales_(1)_salesamount_sum
+relationships: []
