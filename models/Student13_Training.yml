@@ -1,6 +1,6 @@
-unique_name: JD_Training
+unique_name: Student13_Training
 object_type: model
-label: JD_Training
+label: Student13_Training
 dimensions:
   - Color
   - Style
