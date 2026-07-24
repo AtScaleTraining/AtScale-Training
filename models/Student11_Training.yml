@@ -1,6 +1,6 @@
-unique_name: Student1_Training
+unique_name: Student11_Training
 object_type: model
-label: Student1_Training
+label: Student11_Training
 dimensions:
   - Color
   - Style
