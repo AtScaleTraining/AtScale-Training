@@ -1,0 +1,6 @@
+unique_name: m_factinternetsales_product_info_non-null
+object_type: metric
+label: Product Info
+calculation_method: count non-null
+column: product_info
+dataset: factinternetsales

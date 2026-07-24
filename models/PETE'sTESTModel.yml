@@ -4,4 +4,5 @@ label: PETE'sTESTModel
 metrics:
   - unique_name: m_factinternetsales_productkey_sum
   - unique_name: m_factinternetsales_salesordernumber_non-null
+  - unique_name: m_factinternetsales_product_info_non-null
 relationships: []
