@@ -1,0 +1,6 @@
+unique_name: m_factinternetsales_salesordernumber_non-null
+object_type: metric
+label: Sales Order Number
+calculation_method: count non-null
+column: salesordernumber
+dataset: factinternetsales
