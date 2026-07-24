@@ -1,0 +1,6 @@
+unique_name: m_factinternetsales_productkey_sum
+object_type: metric
+label: Product Key
+calculation_method: sum
+column: productkey
+dataset: factinternetsales
