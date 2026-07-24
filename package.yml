@@ -1,6 +1,6 @@
 version: 1
 packages:
-  - version: commit:9026796b1a03e3f3263d242856a50455e65b01da
+  - version: commit:98b2c1cf81109c903d3192c7210d40a76f5cd00e
     name: global_shared
     url: https://github.com/AtScaleTraining/TRAINING_SharedDimensions
     branch: main
